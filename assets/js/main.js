@@ -17,7 +17,7 @@ $(function() {
 
 		if (navigator.userAgent.search(/Safari/) > 0 & $(window).width() < 768) {
 			console.log("safari");
-			$("#our-company .swiper-slide").addClass("swiper-slide.none-transform-style")
+			$("#our-company .swiper-slide").addClass("swiper-slide-none-transform-style")
 		};
 
 	new Swiper("#services .swiper-container", {
