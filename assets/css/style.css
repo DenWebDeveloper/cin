@@ -7823,3 +7823,8 @@ footer {
 
 #cookies .modal-dialog {
   margin-top: 20%; }
+
+
+  .swiper-container-3d .swiper-slide.none-transform-style {
+  	transform-style: initial;
+  }
