@@ -16,13 +16,14 @@ $(function() {
 
 
 		if (navigator.userAgent.search(/Safari/) > 0 & $(window).width() < 768) {
-			$(".swiper-container-3d .swiper-wrapper").css({ "-webkit-transform-style": "", "transform-style:": "" })
-			$(".swiper-container-3d .swiper-slide").css({ "-webkit-transform-style": "", "transform-style:": "" })
-			$(".swiper-container-3d .swiper-slide-shadow-left").css({ "-webkit-transform-style": "", "transform-style:": "" })
-			$(".swiper-container-3d .swiper-slide-shadow-right").css({ "-webkit-transform-style": "", "transform-style:": "" })
-			$(".swiper-container-3d .swiper-slide-shadow-top").css({ "-webkit-transform-style": "", "transform-style:": "" })
-			$(".swiper-container-3d .swiper-slide-shadow-bottom").css({ "-webkit-transform-style": "", "transform-style:": "" })
-			$(".swiper-container-3d .swiper-cube-shadow").css({ "-webkit-transform-style": "", "transform-style:": "" })
+			сonsole.log("safari");
+			$(".swiper-container-3d .swiper-wrapper").css({ "-webkit-transform-style": "initial", "transform-style:": "initial" })
+			$(".swiper-container-3d .swiper-slide").css({ "-webkit-transform-style": "initial", "transform-style:": "initial" })
+			$(".swiper-container-3d .swiper-slide-shadow-left").css({ "-webkit-transform-style": "initial", "transform-style:": "initial" })
+			$(".swiper-container-3d .swiper-slide-shadow-right").css({ "-webkit-transform-style": "initial", "transform-style:": "initial" })
+			$(".swiper-container-3d .swiper-slide-shadow-top").css({ "-webkit-transform-style": "initial", "transform-style:": "initial" })
+			$(".swiper-container-3d .swiper-slide-shadow-bottom").css({ "-webkit-transform-style": "initial", "transform-style:": "initial" })
+			$(".swiper-container-3d .swiper-cube-shadow").css({ "-webkit-transform-style": "initial", "transform-style:": "initial" })
 		};
 
 	new Swiper("#services .swiper-container", {
