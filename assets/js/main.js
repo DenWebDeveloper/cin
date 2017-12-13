@@ -110,25 +110,25 @@ $(function() {
 	if (navigator.userAgent.search(/Safari/) > 0) {
 		browser = "Safari";
 		$(".swiper-container-3d .swiper-wrapper").css(
-			{"transform-style":"unset"}
+			{"transform-style":"initial"}
 		);
 		$(".swiper-container-3d .swiper-slide").css(
-			{"transform-style":"unset"}
+			{"transform-style":"initial"}
 		);
 		$(".swiper-container-3d .swiper-slide-shadow-left").css(
-			{"transform-style":"unset"}
+			{"transform-style":"initial"}
 		);
 		$(".swiper-container-3d .swiper-slide-shadow-right").css(
-			{"transform-style":"unset"}
+			{"transform-style":"initial"}
 		);
 		$(".swiper-container-3d .swiper-slide-shadow-top").css(
-			{"transform-style":"unset"}
+			{"transform-style":"initial"}
 		);
 		$(".swiper-container-3d .swiper-slide-shadow-bottom").css(
-			{"transform-style":"unset"}
+			{"transform-style":"initial"}
 		);
 		$(".swiper-container-3d .swiper-cube-shadow").css(
-			{"transform-style":"unset"}
+			{"transform-style":"initial"}
 		);
 	}
 	if (navigator.userAgent.search(/Firefox/) > 0) {
@@ -166,4 +166,4 @@ $(function() {
 
 });
 
- 
+ initial
