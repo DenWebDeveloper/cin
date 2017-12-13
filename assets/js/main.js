@@ -102,7 +102,7 @@ $(function() {
 		});
 
 
-
+    function container3D() { 
 
 		$(".swiper-container-3d .swiper-wrapper").addClass("transform-style3d");
 
@@ -127,6 +127,8 @@ $(function() {
 		$("#tracking ").css({
 			"background-attachment": "fixed"
 		});
+
+		}
 
 	var browser;
 	if (navigator.userAgent.search(/Safari/) > 0) {
@@ -157,33 +159,42 @@ $(function() {
 	}
 	if (navigator.userAgent.search(/Firefox/) > 0) {
 		browser = "MozillaFirefox";
+		container3D()
 	}
 	if (
 		navigator.userAgent.search(/MSIE/) > 0 ||
 		navigator.userAgent.search(/NET CLR /) > 0
 	) {
 		browser = "Internet Explorer";
+	container3D()
 	}
 	if (navigator.userAgent.search(/Chrome/) > 0) {
 		browser = "Google Chrome";
+		container3D()
 	}
 	if (navigator.userAgent.search(/YaBrowser/) > 0) {
 		browser = "Яндекс браузер";
+		container3D()
 	}
 	if (navigator.userAgent.search(/OPR/) > 0) {
 		browser = "Opera";
+		container3D()
 	}
 	if (navigator.userAgent.search(/Konqueror/) > 0) {
 		browser = "Konqueror";
+		container3D()
 	}
 	if (navigator.userAgent.search(/Iceweasel/) > 0) {
 		browser = "Debian Iceweasel";
+		container3D()
 	}
 	if (navigator.userAgent.search(/SeaMonkey/) > 0) {
 		browser = "SeaMonkey";
+		container3D()
 	}
 	if (navigator.userAgent.search(/Edge/) > 0) {
 		browser = "Microsoft Edge";
+		container3D()
 	}
 	console.log(browser);
 
