@@ -6861,7 +6861,15 @@ a.text-dark:focus, a.text-dark:hover {
   -webkit-perspective: 1200px;
   perspective: 1200px; }
 
- 
+.swiper-container-3d .swiper-wrapper,
+.swiper-container-3d .swiper-slide,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-cube-shadow {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right,
@@ -7816,9 +7824,3 @@ footer {
 
 #cookies .modal-dialog {
   margin-top: 20%; }
-
-
-
-  .transform-style3d {
-  	transform-style: preserve-3d;
-  }
