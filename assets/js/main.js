@@ -15,9 +15,8 @@ $(function() {
 		});
 
 	function addStyle3D() {
-		$(".swiper-container-3d .swiper-wrapper").css({
+	$(".swiper-container-3d .swiper-wrapper").css({
 		"transform-style:": "preserve-3d"})
-	};
 	 
 	$(".swiper-container-3d .swiper-slide-shadow-left").css({
 		"transform-style:": "preserve-3d"
@@ -34,7 +33,7 @@ $(function() {
 	$(".swiper-container-3d .swiper-cube-shadow").css({
 		"transform-style:": "preserve-3d"
 	});
-	}
+	};
 
 	var browser;
 	if (navigator.userAgent.search(/Safari/) > 0) {
