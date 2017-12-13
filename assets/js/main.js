@@ -15,9 +15,15 @@ $(function() {
 		});
 
 
-		if (navigator.userAgent.search(/Safari/) > 0 & $(window).width() < 768) {
-			console.log("safari");
-			$("#services .swiper-slide").addClass("swiper-slide-none-transform-style")
+		if (!navigator.userAgent.search(/Safari/)) {
+			console.log("no safari");
+			$(".swiper-container-3d .swiper-wrapper").css({, "transform-style": "preserve-3d" })
+			$(".swiper-container-3d .swiper-slide").css({, "transform-style": "preserve-3d" })
+			$(".swiper-container-3d .swiper-slide-shadow-left").css({, "transform-style": "preserve-3d" })
+			$(".swiper-container-3d .swiper-slide-shadow-right").css({, "transform-style": "preserve-3d" })
+			$(".swiper-container-3d .swiper-slide-shadow-top").css({, "transform-style": "preserve-3d" })
+			$(".swiper-container-3d .swiper-slide-shadow-bottom").css({, "transform-style": "preserve-3d" })
+			$(".swiper-container-3d .swiper-cube-shadow").css({, "transform-style": "preserve-3d" })
 		};
 
 	new Swiper("#services .swiper-container", {
