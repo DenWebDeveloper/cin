@@ -124,6 +124,10 @@ $(function() {
 			"transform-style3d"
 		);
 
+		$("#tracking ").css({
+			"background-attachment": "fixed"
+		});
+
 	var browser;
 	if (navigator.userAgent.search(/Safari/) > 0) {
 		browser = "Safari";
@@ -146,6 +150,10 @@ $(function() {
 		$(".swiper-container-3d .swiper-cube-shadow").removeClass(
 			"transform-style3d"
 		);
+
+		$("#tracking ").css({
+			"background-attachment": ""
+		});
 	}
 	if (navigator.userAgent.search(/Firefox/) > 0) {
 		browser = "MozillaFirefox";
