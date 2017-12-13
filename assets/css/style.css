@@ -7816,3 +7816,9 @@ footer {
 
 #cookies .modal-dialog {
   margin-top: 20%; }
+
+
+
+  .transform-style3d {
+  	transform-style: preserve-3d;
+  }
