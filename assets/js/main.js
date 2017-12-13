@@ -14,7 +14,7 @@ $(function() {
 			);
 		});
 
-	addStyle3D() {
+	function addStyle3D() {
 		$(".swiper-container-3d .swiper-wrapper").css({
 		"transform-style:": "preserve-3d"})
 	};
