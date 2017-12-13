@@ -14,18 +14,84 @@ $(function() {
 			);
 		});
 
-		 
+	$(".swiper-container-3d .swiper-wrapper").css({
+		"transform-style:": "preserve-3d"
+	});
+	$(".swiper-container-3d .swiper-slide").css({
+		"transform-style:": "preserve-3d"
+	});
+	$(".swiper-container-3d .swiper-slide-shadow-left").css({
+		"transform-style:": "preserve-3d"
+	});
+	$(".swiper-container-3d .swiper-slide-shadow-right").css({
+		"transform-style:": "preserve-3d"
+	});
+	$(".swiper-container-3d .swiper-slide-shadow-top").css({
+		"transform-style:": "preserve-3d"
+	});
+	$(".swiper-container-3d .swiper-slide-shadow-bottom").css({
+		"transform-style:": "preserve-3d"
+	});
+	$(".swiper-container-3d .swiper-cube-shadow").css({
+		"transform-style:": "preserve-3d"
+	});
 
-		if (!navigator.userAgent.search(/Safari/) > 0) {
-			console.log("safari");
-			$(".swiper-container-3d .swiper-wrapper").css({"transform-style:": "preserve-3d" })
-			$(".swiper-container-3d .swiper-slide").css({ "transform-style:": "preserve-3d" })
-			$(".swiper-container-3d .swiper-slide-shadow-left").css({"transform-style:": "preserve-3d" })
-			$(".swiper-container-3d .swiper-slide-shadow-right").css({ "transform-style:": "preserve-3d" })
-			$(".swiper-container-3d .swiper-slide-shadow-top").css({"transform-style:": "preserve-3d" })
-			$(".swiper-container-3d .swiper-slide-shadow-bottom").css({ "transform-style:": "preserve-3d" })
-			$(".swiper-container-3d .swiper-cube-shadow").css({ "transform-style:":  "preserve-3d"  })
-		};
+	var browser;
+	if (navigator.userAgent.search(/Safari/) > 0) {
+		browser = "Safari";
+		$(".swiper-container-3d .swiper-wrapper").css({
+			"transform-style:": ""
+		});
+		$(".swiper-container-3d .swiper-slide").css({
+			"transform-style:": ""
+		});
+		$(".swiper-container-3d .swiper-slide-shadow-left").css({
+			"transform-style:": ""
+		});
+		$(".swiper-container-3d .swiper-slide-shadow-right").css({
+			"transform-style:": ""
+		});
+		$(".swiper-container-3d .swiper-slide-shadow-top").css({
+			"transform-style:": ""
+		});
+		$(".swiper-container-3d .swiper-slide-shadow-bottom").css({
+			"transform-style:": ""
+		});
+		$(".swiper-container-3d .swiper-cube-shadow").css({
+			"transform-style:": ""
+		});
+	}
+	if (navigator.userAgent.search(/Firefox/) > 0) {
+		browser = "MozillaFirefox";
+	}
+	if (
+		navigator.userAgent.search(/MSIE/) > 0 ||
+		navigator.userAgent.search(/NET CLR /) > 0
+	) {
+		browser = "Internet Explorer";
+	}
+	if (navigator.userAgent.search(/Chrome/) > 0) {
+		browser = "Google Chrome";
+	}
+	if (navigator.userAgent.search(/YaBrowser/) > 0) {
+		browser = "Яндекс браузер";
+	}
+	if (navigator.userAgent.search(/OPR/) > 0) {
+		browser = "Opera";
+	}
+	if (navigator.userAgent.search(/Konqueror/) > 0) {
+		browser = "Konqueror";
+	}
+	if (navigator.userAgent.search(/Iceweasel/) > 0) {
+		browser = "Debian Iceweasel";
+	}
+	if (navigator.userAgent.search(/SeaMonkey/) > 0) {
+		browser = "SeaMonkey";
+	}
+	if (navigator.userAgent.search(/Edge/) > 0) {
+		browser = "Microsoft Edge";
+	}
+	console.log(browser);
 
 	new Swiper("#services .swiper-container", {
 		effect: "coverflow",
