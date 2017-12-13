@@ -7544,7 +7544,6 @@ header {
   background: url(../img/tracking-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   min-height: 100%;
   padding-top: 100px;
   padding-bottom: 100px;
