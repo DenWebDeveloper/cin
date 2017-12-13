@@ -16,7 +16,7 @@ $(function() {
 
 	addStyle3D() {
 		$(".swiper-container-3d .swiper-wrapper").css({
-		"transform-style:": "preserve-3d"
+		"transform-style:": "preserve-3d"})
 	};
 	 
 	$(".swiper-container-3d .swiper-slide-shadow-left").css({
