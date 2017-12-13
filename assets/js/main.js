@@ -104,89 +104,62 @@ $(function() {
 
 
 
-function addStyle3D() {
-		$(".swiper-container-3d .swiper-wrapper").addClass("transform-style3d");
 
-		$(".swiper-container-3d .swiper-slide").addClass("transform-style3d");
-
-		$(".swiper-container-3d .swiper-slide-shadow-left").addClass(
-			"transform-style3d"
-		);
-		$(".swiper-container-3d .swiper-slide-shadow-right").addClass(
-			"transform-style3d"
-		);
-		$(".swiper-container-3d .swiper-slide-shadow-top").addClass(
-			"transform-style3d"
-		);
-		$(".swiper-container-3d .swiper-slide-shadow-bottom").addClass(
-			"transform-style3d"
-		);
-		$(".swiper-container-3d .swiper-cube-shadow").addClass(
-			"transform-style3d"
-		);
-	}
 
 	var browser;
 	if (navigator.userAgent.search(/Safari/) > 0) {
 		browser = "Safari";
-		$(".swiper-container-3d .swiper-wrapper").removeClass("transform-style3d");
-
-		$(".swiper-container-3d .swiper-slide").removeClass("transform-style3d");
-
-		$(".swiper-container-3d .swiper-slide-shadow-left").removeClass(
-			"transform-style3d"
+		$(".swiper-container-3d .swiper-wrapper").css(
+			{"transform-style3d":"unset"}
 		);
-		$(".swiper-container-3d .swiper-slide-shadow-right").removeClass(
-			"transform-style3d"
+		$(".swiper-container-3d .swiper-slide").css(
+			{"transform-style3d":"unset"}
 		);
-		$(".swiper-container-3d .swiper-slide-shadow-top").removeClass(
-			"transform-style3d"
+		$(".swiper-container-3d .swiper-slide-shadow-left").css(
+			{"transform-style3d":"unset"}
 		);
-		$(".swiper-container-3d .swiper-slide-shadow-bottom").removeClass(
-			"transform-style3d"
+		$(".swiper-container-3d .swiper-slide-shadow-right").css(
+			{"transform-style3d":"unset"}
 		);
-		$(".swiper-container-3d .swiper-cube-shadow").removeClass(
-			"transform-style3d"
+		$(".swiper-container-3d .swiper-slide-shadow-top").css(
+			{"transform-style3d":"unset"}
+		);
+		$(".swiper-container-3d .swiper-slide-shadow-bottom").css(
+			{"transform-style3d":"unset"}
+		);
+		$(".swiper-container-3d .swiper-cube-shadow").css(
+			{"transform-style3d":"unset"}
 		);
 	}
 	if (navigator.userAgent.search(/Firefox/) > 0) {
 		browser = "MozillaFirefox";
-		addStyle3D();
 	}
 	if (
 		navigator.userAgent.search(/MSIE/) > 0 ||
 		navigator.userAgent.search(/NET CLR /) > 0
 	) {
 		browser = "Internet Explorer";
-		addStyle3D();
 	}
 	if (navigator.userAgent.search(/Chrome/) > 0) {
 		browser = "Google Chrome";
-		addStyle3D();
 	}
 	if (navigator.userAgent.search(/YaBrowser/) > 0) {
 		browser = "Яндекс браузер";
-		addStyle3D();
 	}
 	if (navigator.userAgent.search(/OPR/) > 0) {
 		browser = "Opera";
-		addStyle3D();
 	}
 	if (navigator.userAgent.search(/Konqueror/) > 0) {
 		browser = "Konqueror";
-		addStyle3D();
 	}
 	if (navigator.userAgent.search(/Iceweasel/) > 0) {
 		browser = "Debian Iceweasel";
-		addStyle3D();
 	}
 	if (navigator.userAgent.search(/SeaMonkey/) > 0) {
 		browser = "SeaMonkey";
-		addStyle3D();
 	}
 	if (navigator.userAgent.search(/Edge/) > 0) {
 		browser = "Microsoft Edge";
-		addStyle3D();
 	}
 	console.log(browser);
 
