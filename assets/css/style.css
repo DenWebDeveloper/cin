@@ -7432,6 +7432,13 @@ header {
   font-weight: 900;
   background: transparent url(../img/bg-header.jpg) bottom left no-repeat;
  background-size: auto 100%; }
+
+ @media(max-width: 500px) {
+ 	header {
+		background-size: 1000px 100%; 
+ 	}
+ 	 }
+ }
   header .navbar {
     padding: 20px 10px;
     background-color: #323232; }
